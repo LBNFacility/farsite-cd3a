@@ -1,6 +1,5 @@
 \chapter{Introduction}
 \label{ch:cryo-intro}
-%\input{common/intro}  <--- no longer needed/appropriate 2015
 
 \section{LBNF Cryogenics Infrastructure}
 \label{sec:cryo-intro-fd}
@@ -20,7 +19,6 @@ oversight of the following components:
   \item {purifying the LAr outside the cryostats}
  \end{itemize}
 \end{itemize}
-%This chapter describes a reference design for these interdependent detector elements.
 
 The reference design for the LBNF cryogenics infrastructure 
 encompasses the following components:
@@ -37,11 +35,8 @@ encompasses the following components:
 \item Cryostat-purge facilities
 \end{itemize}
 
-%\section{Introduction}
-%\label{sec:cryo-cryosys-intro}
 
-The conceptual reference design for the DUNE far detector (FD) %LBNF 
- specifies four   %%%%%%%%%%%%%%  4/7/15
+The conceptual reference design for the DUNE far detector (FD) specifies four  
 rectangular cold vessels each measuring 15.1~m internal width, 14.0~m internal 
 height and 62.0~m internal length - each vessel contains a total mass of 
 17.1~kt of LAr and between 3 and 5\% of Ar gas operating at a 
@@ -50,9 +45,6 @@ membrane design is commonly
 used for liquefied natural gas (LNG) storage and transport 
 tanker ships (Figure~\ref{fig:memb-tank-int}) and has been 
 proven to be a viable option for LArTPC experiments. 
-%% (TBD) 
-%% references for 35 ton and further prototyping efforts
-%% on-going at CERN and FNAL 
 A membrane tank 
 is made of a stainless-steel liner to contain the liquid cryogen. 
 The pressure loading of the liquid cryogen is transmitted 
@@ -61,29 +53,21 @@ which provides external support for the liner. The membrane
 liner is corrugated to provide strain relief resulting from 
 temperature-related expansion and contraction (Figure~\ref{fig:prim-barrier}).
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=.8\textwidth]{v5ch2-memb-tank-int}
-\caption[Interior of a LNG tanker ship]{Interior of a LNG tanker ship. 
-%A typical tank from one of two potential vendors is made of 
-%four 40,000~m$^3$ compartments, 35~m high by 45~m wide. 
+
+\begin{cdrfigure}[Interior of a LNG tanker ship]{memb-tank-int}{Interior of a LNG tanker ship. 
 The tank shown is 24~m high by 35~m wide with interior grid-like 
 corrugations on a 0.34~m pitch. By comparison, a single LBNF 
-cryostat is %18887~m$^3$, 
-14.0~m high by 15.1~m wide.}
-\label{fig:memb-tank-int}
-\end{figure}
+cryostat is 14.0~m high by 15.1~m wide.}
+\includegraphics[width=.8\textwidth]{v5ch2-memb-tank-int}
+\end{cdrfigure}
 
-\begin{figure}[htbp]
-\centering
+\begin{cdrfigure}[Primary membrane section]{prim-barrier}{Primary membrane section (courtesy GTT)}
 \includegraphics[width=.8\textwidth]{v5ch2-prim-barrier}
-\caption[Primary membrane section]{Primary membrane section (courtesy GTT)}
-\label{fig:prim-barrier}
-\end{figure}
+\end{cdrfigure}
+
 
 The advantages offered by the membrane design relative to a self-supporting cryostat are:
 \begin{itemize}
-%\item Lower cost due largely to the relative simplicity of a single cryogenic volume
 \item Efficient use of the underground cavern volume due to its positioning 
 close to the rock on floor and sides, which reduces the civil construction 
 costs for the project
@@ -99,9 +83,6 @@ system from GTT); this is for informational purposes only and should not
 be construed as preferring GTT over IHI. Nothing inherent in the IHI 
 design changes the design approach. 
 
-%ARUP has documented the two vendor products in their Fall 2011 report
-%that updated previous designs specficially to the two-20-kT module 
-%design at the 800L. 
 
 \section{Design Parameters}
 \label{sec:cryo-cryosys-params}
@@ -114,108 +95,62 @@ stable liquid argon environment for the TPC and to provide
 mechanical support for the TPC. For components that pass 
 through the ullage (the vapor space above the LAr), no 
 sources of reliquefaction may be present. Tables 
-\ref{table:param-summ-LBNF} and \ref{table:cryo-reqs} 
+\ref{tab:param-summ-LBNF} and \ref{tab:cryo-reqs} 
 offer a brief overview of parameters for a single 
 cryostat of LBNF.
 
-\begin{table}
-\caption{Design parameters for one LBNF Cryostat}
-\label{table:param-summ-LBNF}
- \begin{tabular}[htbp]{|l| p{8cm} |}
-\hline
-\textbf{Parameter} &  \textbf{Value} \\
-\hline\hline
-Cryostat Internal Volume &  13,107 m$^3$ \\
-\hline
-Total LAr Mass & 17.1 kt \\
-\hline
-Cryostat Inside Depth & 14.0 m \\
-\hline
-Cryostat Inside Width & 15.1 m \\
-\hline
-Cryostat Inside Length & 62.0 m  \\
-\hline
-Cryostat Outside Height & 16.62 m \\
-\hline
-Cryostat Outside Width & 18.72 m \\
-\hline
-Cryostat Outside Length & 65.62 m \\
-\hline
+\begin{cdrtable}[Design parameters for one LBNF Cryostat]{l p{8cm} }{param-summ-LBNF}{Design parameters for one LBNF Cryostat}
+Parameter &  Value \\ \toprowrule
+Cryostat Internal Volume &  13,107 m$^3$ \\ \colhline
+Total LAr Mass & 17.1 kt \\ \colhline
+Cryostat Inside Depth & 14.0 m \\ \colhline
+Cryostat Inside Width & 15.1 m \\ \colhline
+Cryostat Inside Length & 62.0 m  \\ \colhline
+Cryostat Outside Height & 16.62 m \\ \colhline
+Cryostat Outside Width & 18.72 m \\ \colhline
+Cryostat Outside Length & 65.62 m \\ \colhline
 Insulation &  Reinforced Polyurethane of 80~cm thickness; \\
            &  two (inner/outer) layers around secondary \\
-           &  containment (40~cm per each layer) \\ 
-\hline
+           &  containment (40~cm per each layer) \\ \colhline
 Primary Membrane (GTT Design) & 1.2 mm thick type 304L stainless steel \\
                               & with corrugations on 340 mm $\times$ 503 mm \\
-                       & rectangular pitch\\
-\hline
+                       & rectangular pitch\\ \colhline
 Secondary Containment (GTT Design) & $\approx$ 0.07 mm thick aluminum between \\ 
                             & fiberglass cloth; overall thickness is \\
-                            & 0.8 mm located between insulation layers \\
-\hline
+                            & 0.8 mm located between insulation layers \\ \colhline
 External Vapor Barrier Thickness & 10 mm \\
-(Steel Plates)                   &       \\
-\hline
+(Steel Plates)                   &       \\ \colhline
 External Support Structure Thickness & 1.0 m (Steel) \\
-On Sides & \\
-\hline
+On Sides & \\ \colhline
 External Support Structure Thickness & 0.5 m (Steel) \\
-Top and Bottom & \\
-\hline
-LAr Temperature & 88.3 $\pm$ 1 K \\
-\hline
-Minimum LAr Depth (Liquid Head) & 13.2 m \\
-\hline
-Ullage Operating Pressure & 130 mbarg (range: 50$-$200 mbarg) \\
-\hline
-Pressure at Bottom & 1,948 mbarg \\
-\hline 
+Top and Bottom & \\ \colhline
+LAr Temperature & 88.3 $\pm$ 1 K \\ \colhline
+Minimum LAr Depth (Liquid Head) & 13.2 m \\ \colhline
+Ullage Operating Pressure & 130 mbarg (range: 50$-$200 mbarg) \\ \colhline
+Pressure at Bottom & 1,948 mbarg \\ \colhline
 Cryostat Design Pressure & 350 mbarg \\
-\hline
-\end{tabular} 
-\end{table}
+\end{cdrtable}
 
-% BN Jan 20 2012 changed Table to reflect 4850L
 
-\begin{table}
-\caption[Summary of parameters for membrane cryostat at the 4850L]{Summary of parameters for membrane cryostat at the 4850L (the bottom of the Ross shaft)} 
-\label{table:cryo-reqs}
-\begin{tabular}[htbp]{| p{0.43\textwidth}|p{0.5\textwidth}|}
-\hline 
-\textbf{Property} & \textbf{Reference-Design Cryostat}\\
-\hline\hline
-Personnel Access to Cavern & Ross shaft\\
-\hline
-Equipment Transport to Cavern & Ross shaft, Yates shaft for long items \\
-\hline
-Construction Access to Pit & From above highbay \\
-\hline
-Type of Crane in Cavern & Mobile construction \\
-\hline
-Base & Steel structure \\
-\hline
-Side Walls & Steel structure \\
-\hline
-Heating System & Redundant/replaceable electric system \\
-\hline
-%Roof & Pre-fabricated steel truss modules with lower steel plate \\
-Roof & Steel structure \\
-\hline
-Vapor Barrier & Steel plates  \\
-\hline
-Insulation/Secondary Barrier/Membrane & GST system by GTT \\
-\hline
+\begin{cdrtable}[Summary of parameters for membrane cryostat at the 4850L]{ p{0.43\textwidth} p{0.5\textwidth}}{cryo-reqs}{Summary of parameters for membrane cryostat at the 4850L (the bottom of the Ross shaft)}
+Property & Reference-Design Cryostat\\ \toprowrule
+Personnel Access to Cavern & Ross shaft\\ \colhline
+Equipment Transport to Cavern & Ross shaft, Yates shaft for long items \\ \colhline
+Construction Access to Pit & From above highbay \\ \colhline
+Type of Crane in Cavern & Mobile construction \\ \colhline
+Base & Steel structure \\ \colhline
+Side Walls & Steel structure \\ \colhline
+Heating System & Redundant/replaceable electric system \\ \colhline
+Roof & Steel structure \\ \colhline
+Vapor Barrier & Steel plates  \\ \colhline
+Insulation/Secondary Barrier/Membrane & GST system by GTT \\ \colhline
 TPC & Individual 2.3 m $\times$ 6.0 m frames lowered through \\
     & 2.0 m $\times$ 4.0 m roof hatch. Assembled within \\
     & cryostat and suspended by hangers passing \\
-    & through the roof. \\
-\hline
+    & through the roof. \\ \colhline
 LAr Containment System & Stainless Steel Primary Membrane; \\
                        & Secondary Barrier \\
-            
-\hline
-\end{tabular} 
-\end{table}
+\end{cdrtable}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
