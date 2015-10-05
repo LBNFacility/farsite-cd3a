@@ -417,7 +417,8 @@ construction of these piping system shall be carried out by CF.
 The piping between the surface and cavern area is located in a utility 
 chase down the Ross shaft. See Figure~\ref{fig:framing-at-ross-piping}. 
 The piping material is carbon steel coated with a corrosion barrier,
-a single layer of fusion epoxy. Table~\ref{table:pipelines} lists 
+a single layer of fusion epoxy. Table~\ref{tab:pipelines} %Table~\ref{table:pipelines} 
+lists 
 the piping and its duty 
 and size. The frictional pressure drop for the supply pipes matches
 the pressure gained due to the static head from elevation change. 
@@ -445,22 +446,14 @@ each cryostat with liquid argon in a reasonable period of
 time is a driving factor to determine the size of the 
 refrigerator and condenser.
 
-\begin{table}
-\caption[Piping between surface and cavern area]{Piping between surface and cavern area; description, duty, 
-and size and pressure required}
-\label{table:pipelines}
-\begin{tabular}[htbp]{|p{0.24\textwidth}|p{0.26\textwidth}|p{0.21\textwidth}|p{0.185\textwidth}|}
-\hline
-{\bf Description} & {\bf Duty} & {\bf [No. of Pipes] Size} & {\bf Gas Pressure} \\
-\hline\hline
-Argon transfer   & During filling and emptying & [1] 8'' SCH. 40  &  0.24 MPa\\
-\hline
-N$_2$ compressor discharge & Continuous & [2] 8'' SCH. 40 & 1.14 MPa \\
-\hline
-N$_2$ compressor suction & Continuous & [2] 16'' SCH. 40 & 0.19 MPa (down);  \\
+\begin{cdrtable}[Piping between surface and cavern area]{p{0.24\textwidth}p{0.26\textwidth}p{0.21\textwidth}p{0.185\textwidth}}{pipelines}{Piping between surface and cavern area; description, duty, and size and pressure required}
+%\begin{tabular}[htbp]{|p{0.24\textwidth}|p{0.26\textwidth}|p{0.21\textwidth}|p{0.185\textwidth}|}
+{Description} & {Duty} & {[No. of Pipes] Size} & {Gas Pressure} \\  \toprowrule
+Argon transfer   & During filling and emptying & [1] 8'' SCH. 40  &  0.24 MPa\\ \colhline
+N$_2$ compressor discharge & Continuous & [2] 8'' SCH. 40 & 1.14 MPa \\ \colhline
+N$_2$ compressor suction & Continuous & [2] 16'' SCH. 40 & 0.19 MPa (down);  \\ 
                          &            &                        & 0.11 MPa (up) \\
-\hline\end{tabular} 
-\end{table}
+\end{cdrtable}
 
 The facility is designed that the fresh air is drawn
 in through Ross and Yates shafts
@@ -835,29 +828,18 @@ recondenser) will be supplied from a closed-loop LN$_{2}$ refrigeration plant.
 The commercial refrigeration plant uses compression/expansion and heat 
 rejection to continuously liquefy and reuse the returning nitrogen 
 vapor. The estimated heat loads within the cryostat are listed 
-in Table~\ref{table:cryo-heat-loads}.
+in Table~\ref{tab:cryo-heat-loads}.
  
 % \fixme{table still needed? It is not referenced within text}  1/5/15 Anne added ref above to table.
-\begin{table}
-\centering
-\caption{Estimated heat loads within the cryostat}
-\label{table:cryo-heat-loads}
-\begin{tabular}[htbp]{|l|c|}
-\hline
-{\bf Item} & {\bf Heat Load (kW)}\\
-\hline\hline
-Insulation heat loss & 28.8  \\
-\hline
-Electronics power & 23.7  \\
-\hline
-Recirculation-pump power & 10.4 \\
-\hline
-Misc. heat leaks (pipes, filters, etc.) & 3.7 \\
-\hline\hline
+\begin{cdrtable}[Estimated heat loads within the cryostat]{lc}{cryo-heat-loads}{Estimated heat loads within the cryostat}
+{\bf Item} & {\bf Heat Load (kW)}\\  \toprowrule
+Insulation heat loss & 28.8  \\ \colhline
+Electronics power & 23.7  \\ \colhline
+Recirculation-pump power & 10.4 \\ \colhline
+Misc. heat leaks (pipes, filters, etc.) & 3.7 \\ \colhline
 {\bf Total} & {\bf 66.6 } \\
-\hline
-\end{tabular} 
-\end{table}
+\end{cdrtable}
+
 
 \begin{figure}[htbp]
 \centering
@@ -1043,23 +1025,17 @@ ingress to the cryostat), increasing the argon flow rate through
 the recondenser, increasing the LN$_2$ flow through the recondenser vessel, 
 powering down heat sources within the cryostat (e.g., detector electronics).  
 Eventually, if the pressure continues to rise, it will trigger the 
-pressure-relief valves to operate. Table~\ref{table:pressure-values} 
+pressure-relief valves to operate. Table~\ref{tab:pressure-values} 
 gives important pressure values.
 
 %%%%%%%%%
-\begin{table}
-\centering
-%\begin{tabular}[htbp]{| p{0.3\textwidth}|p{0.3\textwidth}||p{0.3\textwidth}|}
-\caption{Important Pressure Values}
-\label{table:pressure-values}\begin{tabular}[htbp]{|l|l|}
-\hline 
-Vessel ullage maximum operating pressure & 0.121 MPa, 200 mbarg, 2.9 psig\\
-\hline
-Cryostat Design Pressure; Relief valve set pressure& 0.135 MPa, 350 mbarg, 5.1 psig\\
-\hline
-\end{tabular} 
 
-\end{table}
+\begin{cdrtable}
+[Important pressure values]{ll}{pressure-values}{Important pressure values}
+Vessel ullage maximum operating pressure & 0.121 MPa, 200 mbarg, 2.9 psig\\ \colhline
+Cryostat Design Pressure, Relief valve set pressure& 0.135 MPa, 350 mbarg, 5.1 psig\\
+\end{cdrtable}
+
 %%%%%%%%%
 
 The ability of the control system to maintain a set pressure is 
