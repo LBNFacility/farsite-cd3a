@@ -191,6 +191,8 @@
   \end{table}
 }
 
+\usepackage{tablefootnote}
+
 \newcommand{\cdrfiglabel}{}% stores the label
 \newcommand{\cdrfigcaption}{}% stores the caption
 \newcommand{\cdrfigcaptionshort}{}% stores an optional short caption
